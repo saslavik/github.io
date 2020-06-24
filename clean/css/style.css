@@ -1,0 +1,928 @@
+@font-face {
+  font-family: 'Circe';
+  src: url('../fonts/Circe-Regular.eot');
+  src: url('../fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Circe-Regular.woff') format('woff'), url('../fonts/Circe-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CirceExtraBold';
+  src: url('../fonts/Circe-ExtraBold.eot');
+  src: url('../fonts/Circe-ExtraBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Circe-ExtraBold.woff') format('woff'), url('../fonts/Circe-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  transition: 0.5s;
+  color: #5E625E;
+  font-family: Circe, sans-serif;
+}
+span {
+  color: #00BF81;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: CirceExtraBold;
+  text-align: left;
+}
+h2 {
+  color: #1F2122;
+  display: block;
+  position: relative;
+}
+h2:before {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 40px;
+  background-color: rgba(0, 191, 129, 0.3);
+  transform: skew(-20deg);
+  top: 0;
+  left: -18px;
+}
+.subtitle {
+  margin-bottom: 50px;
+  display: inline-block;
+  max-width: 500px;
+  background-color: rgba(186, 204, 198, 0.29);
+  padding: 10px;
+  border-radius: 0 8px 8px 8px;
+}
+.subtitle p {
+  font-size: 12px;
+  margin: 0;
+}
+/*--------------- Номер телефона ---------------------*/
+.phone a {
+  text-decoration: none;
+  color: #5E625E;
+  height: 60px;
+  line-height: 60px;
+  font-weight: bold;
+  position: relative;
+}
+.phone a:before {
+  content: url('../img/phone-call1.png');
+  position: absolute;
+  left: -30px;
+  top: -18px;
+}
+/*--------------- шапка сайта ---------------------*/
+header,
+footer {
+  /*--------------- Кнопки навигации ---------------------*/
+}
+header .logoleft,
+footer .logoleft,
+header .logoright,
+footer .logoright {
+  display: inline-block;
+}
+header .logoleft,
+footer .logoleft {
+  margin: 10px 0 10px 0;
+  padding: 0 10px 0 0;
+  border-right: 1px solid grey;
+  font-size: 25px;
+  line-height: 19px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+header .logoright,
+footer .logoright {
+  height: 40px;
+  padding: 10px 0;
+}
+header .logoright p,
+footer .logoright p {
+  font-size: 10px;
+  line-height: 10px;
+}
+header .nav ul.list-inline,
+footer .nav ul.list-inline {
+  /*.menu-nav:last-child {
+			width: 180px;
+		}*/
+}
+header .nav ul.list-inline .menu-nav,
+footer .nav ul.list-inline .menu-nav {
+  display: inline-block;
+  margin: 0 30px;
+  text-align: center;
+  height: 50px;
+  vertical-align: bottom;
+}
+header .nav ul.list-inline .menu-nav a,
+footer .nav ul.list-inline .menu-nav a {
+  text-decoration: none;
+  color: #5E625E;
+}
+header .nav ul.list-inline .menu-nav a li,
+footer .nav ul.list-inline .menu-nav a li {
+  display: inline-block;
+  height: 50px;
+  padding: 25px 0 0 0;
+  border-top: 1px solid transparent;
+}
+header .nav ul.list-inline .menu-nav a li:hover,
+footer .nav ul.list-inline .menu-nav a li:hover {
+  border-top: 1px solid #00BF81;
+  font-weight: bold;
+}
+/*--------------- Первая секция ---------------------*/
+.firstsection {
+  background: url(../img/main1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.firstsection .col-xl-4,
+.firstsection .col-lg-5,
+.firstsection .col-md-6 {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+}
+.firstsection .col-xl-4 .main h1,
+.firstsection .col-lg-5 .main h1,
+.firstsection .col-md-6 .main h1 {
+  color: black;
+  text-transform: uppercase;
+  font-size: 48px;
+  position: relative;
+}
+.firstsection .col-xl-4 .main h1:after,
+.firstsection .col-lg-5 .main h1:after,
+.firstsection .col-md-6 .main h1:after {
+  content: url('../img/Vector.png');
+  position: absolute;
+  transform: matrix(0.98, 0.17, -0.17, 0.98, 0, 0);
+  width: 60px;
+  height: 200px;
+  top: 50%;
+  right: 40px;
+}
+.firstsection .col-xl-4 .main .main-price,
+.firstsection .col-lg-5 .main .main-price,
+.firstsection .col-md-6 .main .main-price {
+  display: inline-block;
+  background-color: #F0E707;
+  padding: 10px 30px;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 3px 3px 6px -3px #808080;
+  position: relative;
+  margin-bottom: 20px;
+}
+.firstsection .col-xl-4 .main .main-price:before,
+.firstsection .col-lg-5 .main .main-price:before,
+.firstsection .col-md-6 .main .main-price:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  left: 10px;
+  top: 10px;
+  background-color: #e6e6e6;
+  box-shadow: inset 3px 3px 6px -3px #808080;
+}
+.firstsection .col-xl-4 .main p,
+.firstsection .col-lg-5 .main p,
+.firstsection .col-md-6 .main p {
+  font-size: 14px;
+  font-weight: bold;
+  border-left: 2px solid #3C3C3C;
+  padding-left: 10px;
+  padding-right: 100px;
+}
+.firstsection .col-xl-4 .main button,
+.firstsection .col-lg-5 .main button,
+.firstsection .col-md-6 .main button {
+  width: 100%;
+  text-align: center;
+  border: none;
+  box-shadow: 3px 3px 6px -3px #808080;
+  background-color: #F0E707;
+  height: 50px;
+  color: #3C3C3C;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.firstsection .col-xl-4 .main small,
+.firstsection .col-lg-5 .main small,
+.firstsection .col-md-6 .main small {
+  padding-top: 30px;
+  display: block;
+  text-align: center;
+}
+.firstsection .col-xl-4 .main #viber,
+.firstsection .col-lg-5 .main #viber,
+.firstsection .col-md-6 .main #viber,
+.firstsection .col-xl-4 .main #telegram,
+.firstsection .col-lg-5 .main #telegram,
+.firstsection .col-md-6 .main #telegram,
+.firstsection .col-xl-4 .main #whatsapp,
+.firstsection .col-lg-5 .main #whatsapp,
+.firstsection .col-md-6 .main #whatsapp {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.firstsection .col-xl-4 .main .row,
+.firstsection .col-lg-5 .main .row,
+.firstsection .col-md-6 .main .row {
+  padding: 20px 80px 20px 120px;
+}
+.firstsection .col-xl-4 .main #viber,
+.firstsection .col-lg-5 .main #viber,
+.firstsection .col-md-6 .main #viber {
+  margin-right: 30px;
+  background-image: url(../img/viber.png);
+}
+.firstsection .col-xl-4 .main #viber:hover,
+.firstsection .col-lg-5 .main #viber:hover,
+.firstsection .col-md-6 .main #viber:hover {
+  background-image: url(../img/viberh.png);
+}
+.firstsection .col-xl-4 .main #telegram,
+.firstsection .col-lg-5 .main #telegram,
+.firstsection .col-md-6 .main #telegram {
+  margin-right: 30px;
+  background-image: url(../img/telegram.png);
+}
+.firstsection .col-xl-4 .main #telegram:hover,
+.firstsection .col-lg-5 .main #telegram:hover,
+.firstsection .col-md-6 .main #telegram:hover {
+  background-image: url(../img/telegramh.png);
+}
+.firstsection .col-xl-4 .main #whatsapp,
+.firstsection .col-lg-5 .main #whatsapp,
+.firstsection .col-md-6 .main #whatsapp {
+  background-image: url(../img/whatsapp.png);
+}
+.firstsection .col-xl-4 .main #whatsapp:hover,
+.firstsection .col-lg-5 .main #whatsapp:hover,
+.firstsection .col-md-6 .main #whatsapp:hover {
+  background-image: url(../img/whatsapph.png);
+}
+/*--------------- Вторая секция ---------------------*/
+.secondsection {
+  background-color: #F6F6F6;
+  padding: 50px 0 0 0;
+}
+.secondsection img {
+  width: 100%;
+  box-sizing: border-box;
+}
+.secondsection .positive h5 {
+  margin-bottom: 15px;
+  display: block;
+  text-align: left;
+  width: 100%;
+  position: relative;
+}
+.secondsection .positive h5:after {
+  content: '';
+  position: absolute;
+  border-top: 1px solid #00BF81;
+  border-right: 1px solid #00BF81;
+  width: calc(100% - 120px);
+  height: 10px;
+  right: -10px;
+  top: 50%;
+}
+.secondsection .negative h5 {
+  margin-bottom: 15px;
+  display: block;
+  text-align: right;
+  position: relative;
+  width: 100%;
+}
+.secondsection .negative h5:before {
+  content: '';
+  position: absolute;
+  border-top: 1px solid #5E625E;
+  border-left: 1px solid #5E625E;
+  width: calc(100% - 150px);
+  height: 10px;
+  left: -10px;
+  top: 50%;
+}
+.secondsection .positive p {
+  position: relative;
+}
+.secondsection .positive p:before {
+  content: '\2605';
+  font-size: 20px;
+  color: yellow;
+  position: absolute;
+  left: -20px;
+  top: -5px;
+}
+.secondsection .negative p {
+  position: relative;
+  text-align: right;
+}
+.secondsection .negative p:after {
+  content: '\2605';
+  font-size: 20px;
+  color: #5E625E;
+  position: absolute;
+  right: -20px;
+  top: -5px;
+}
+/*--------------- Третья секция ---------------------*/
+.thirdsection {
+  padding: 50px 0;
+  background-color: #E5E5E5;
+}
+.thirdsection .list {
+  background-color: white;
+  margin: 15px 15px 0 15px;
+  padding: 25px 10px 25px 30px;
+  border-radius: 8px 8px 0 0;
+  height: 500px;
+}
+.thirdsection .list h5 {
+  margin-left: 40px;
+  font-weight: bold;
+  color: #1F2122;
+}
+.thirdsection .list li {
+  list-style-type: none;
+  position: relative;
+}
+.thirdsection .list li:before {
+  content: '\2714';
+  position: absolute;
+  left: -20px;
+  top: 0;
+  color: #00BF81;
+}
+.thirdsection .tc1 {
+  position: relative;
+}
+.thirdsection .tc1:before {
+  content: url(../img/typeclean1.png);
+  position: absolute;
+  padding-top: 15px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  vertical-align: center;
+  line-height: 70px;
+  border-radius: 50%;
+  background-color: #FFF8BC;
+  top: -2px;
+  left: -20px;
+}
+.thirdsection .tc2 {
+  position: relative;
+}
+.thirdsection .tc2:before {
+  content: url(../img/typeclean2.png);
+  position: absolute;
+  padding-top: 15px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  vertical-align: center;
+  line-height: 70px;
+  border-radius: 50%;
+  background-color: #FFF8BC;
+  top: -2px;
+  left: -20px;
+}
+.thirdsection .tc3 {
+  position: relative;
+}
+.thirdsection .tc3:before {
+  content: url(../img/typeclean3.png);
+  position: absolute;
+  padding-top: 15px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  vertical-align: center;
+  line-height: 70px;
+  border-radius: 50%;
+  background-color: #FFF8BC;
+  top: -2px;
+  left: -20px;
+}
+.thirdsection .priceclean {
+  display: block;
+  margin: 0 15px 15px 15px;
+  background-color: #10C388;
+  border-radius: 0 0 8px 8px;
+  text-align: center;
+  padding: 15px 0;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+.thirdsection button {
+  margin: 15px 15px 0 15px;
+  width: calc(100% - 30px);
+  text-align: center;
+  border: none;
+  box-shadow: 3px 3px 6px -3px #808080;
+  background-color: #F0E707;
+  height: 50px;
+  color: #1F2122;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+}
+/*--------------- Четвертая секция ---------------------*/
+.fourthsection {
+  padding: 50px 0;
+}
+.fourthsection .col-md-4 {
+  margin-bottom: 25px;
+}
+.fourthsection .advanced {
+  padding: 15px 15px 0 15px;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  height: 100%;
+  font-size: 13px;
+  text-align: justify;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.fourthsection .advanced h5 {
+  font-weight: bold;
+  font-size: 15px;
+  color: black;
+}
+.fourthsection .advanced button {
+  background-color: #10C388;
+  border: none;
+  box-shadow: none;
+  color: white;
+  width: 150px;
+  height: 45px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px 0 0 0;
+}
+.fourthsection .advanced small {
+  height: 45px;
+  line-height: 10px;
+  position: absolute;
+  bottom: -15px;
+  left: 30px;
+  width: 110px;
+  text-align: center;
+}
+.fourthsection .advanced .row:last-child {
+  height: 45px;
+}
+/*--------------- Пятая секция ---------------------*/
+.fifthsection {
+  background-color: #EFF8FA;
+  padding: 50px 0 80px 0;
+  /* Таймер обратного отсчета */
+  /* ---------- цифры ----------*/
+}
+.fifthsection h3 {
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #161616;
+}
+.fifthsection .promo {
+  background-color: #00BF81;
+  border-radius: 8px;
+  color: white;
+  position: relative;
+  height: 330px;
+}
+.fifthsection .tc4 {
+  background-color: white;
+  position: absolute;
+  width: 320px;
+  color: black;
+  bottom: -60px;
+  left: 40px;
+  padding-top: 20px;
+  border-radius: 8px;
+}
+.fifthsection .tc4 h5 {
+  margin: 10px 0 40px 60px;
+}
+.fifthsection .tc4:before {
+  content: url(../img/wardrobe1.png);
+  position: absolute;
+  padding-top: 15px;
+  padding-left: 10px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  vertical-align: center;
+  line-height: 70px;
+  border-radius: 50%;
+  background-color: #FFF8BC;
+  top: -2px;
+  left: -20px;
+}
+.fifthsection .tc4 li {
+  margin: 0 20px;
+  list-style-type: none;
+  position: relative;
+}
+.fifthsection .tc4 li:before {
+  content: '\2714';
+  position: absolute;
+  left: -20px;
+  top: 0;
+  color: #00BF81;
+}
+.fifthsection .tc4 .priceabonament {
+  border-radius: 0 0 8px 8px;
+  background-color: #1D2327;
+  height: 60px;
+}
+.fifthsection .tc4 .priceabonament p,
+.fifthsection .tc4 .priceabonament h3 {
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 30px;
+}
+.fifthsection .tc4 .priceabonament p {
+  color: white;
+  text-decoration: line-through;
+}
+.fifthsection .tc4 .priceabonament h3 {
+  color: #F0E707;
+}
+.fifthsection .col-md-3 {
+  position: relative;
+}
+.fifthsection .col-md-3 img {
+  float: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.fifthsection h6 {
+  width: 80%;
+  padding: 20px;
+  line-height: 25px;
+}
+.fifthsection button {
+  margin: 15px 15px 0 15px;
+  width: 280px;
+  text-align: center;
+  border: none;
+  box-shadow: 3px 3px 6px -3px #808080;
+  background-color: #F0E707;
+  height: 50px;
+  color: #1F2122;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+}
+.fifthsection .col-md-5 small {
+  color: #133F31;
+  width: 150px;
+  padding: 15px 0;
+}
+.fifthsection .time {
+  display: inline-block;
+}
+.fifthsection .doubled {
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'CirceExtraBold', sans-serif;
+  padding: 0 10px;
+}
+.fifthsection .doubled big {
+  height: 55px;
+  line-height: 55px;
+}
+.fifthsection .timer .row {
+  margin: 15px 10px 15px 25px;
+}
+.fifthsection .timer .box {
+  display: inline-block;
+  margin: 0px;
+  width: 40px;
+  border-radius: 5px;
+  text-align: center;
+  background: none;
+  -moz-transform-style: preserve-3d;
+}
+.fifthsection .timer .box .value {
+  position: relative;
+  margin: 0;
+  padding: 14px 0;
+  font-family: "CirceExtraBold", sans-serif;
+  font-size: 22px;
+  border-radius: 5px;
+  color: white;
+  background: #1D2327;
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-animation: wind 4s ease-out alternate infinite;
+  animation: wind 4s ease-out alternate infinite;
+  box-shadow: 0 15px 10px -10px rgba(181, 131, 141, 0);
+}
+.fifthsection .timer .box .label {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: #00BF81;
+  font-size: 12px;
+}
+.fifthsection .timer .box .label::first-letter {
+  text-transform: uppercase;
+}
+.fifthsection .timer .text {
+  margin-top: 5px;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #B5838D;
+}
+/*--------------- Шестая секция ---------------------*/
+.sixthsection {
+  background-color: #EFF8FA;
+  padding: 50px 0 80px 0;
+}
+.sixthsection .nav {
+  font-size: 19px;
+  font-weight: bold;
+  padding: 20px 0;
+}
+.sixthsection .nav .nav-item {
+  padding: 0 4px;
+}
+.sixthsection .nav .nav-item .nav-link {
+  padding: 15px 30px 15px 80px;
+  text-decoration: none;
+  color: #2E3031;
+  background-color: #E2EAEC;
+}
+.sixthsection .nav .nav-item .nav-link:before {
+  content: '';
+  background-color: #69787B;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  position: absolute;
+  left: 25px;
+  top: 10px;
+}
+.sixthsection .nav .nav-item .active {
+  background-color: white;
+}
+.sixthsection .nav .nav-item #clean-tab {
+  position: relative;
+}
+.sixthsection .nav .nav-item #clean-tab:before {
+  -webkit-mask: url(../img/brush1.svg) no-repeat 50% 50%;
+  mask: url(../img/brush1.svg) no-repeat 50% 50%;
+}
+.sixthsection .nav .nav-item #order-tab {
+  position: relative;
+}
+.sixthsection .nav .nav-item #order-tab:before {
+  -webkit-mask: url(../img/click1.svg) no-repeat 50% 50%;
+  mask: url(../img/click1.svg) no-repeat 50% 50%;
+}
+.sixthsection .nav .nav-item #payments-tab {
+  position: relative;
+}
+.sixthsection .nav .nav-item #payments-tab:before {
+  -webkit-mask: url(../img/transfer1.svg) no-repeat 50% 50%;
+  mask: url(../img/transfer1.svg) no-repeat 50% 50%;
+}
+.sixthsection .nav .nav-item .active:before {
+  background-color: #00BF81;
+}
+.sixthsection .nav-tabs {
+  border: none;
+}
+.sixthsection .tab-content {
+  width: 100%;
+}
+.sixthsection .card {
+  background-color: transparent;
+  border: none;
+}
+.sixthsection .card .card-header {
+  width: 100%;
+  padding: 0;
+  display: block;
+  background-color: transparent;
+  border-bottom: none;
+}
+.sixthsection .card .card-header .btn-link {
+  color: #1F2122;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+.sixthsection .card .card-header .btn-link[aria-expanded="true"] {
+  transition: 0;
+  color: #276BD1;
+  background-color: white;
+}
+.sixthsection .card .card-header .btn-link button {
+  position: relative;
+}
+.sixthsection .card .card-header .btn-link button:before {
+  content: '\2228';
+}
+.sixthsection .card [id^="collapse"] {
+  background-color: white;
+}
+/*--------------- Седьмая секция ---------------------*/
+.seventhsection {
+  overflow: hidden;
+  width: 100%;
+}
+.map {
+  width: 100%;
+}
+/*--------------- Модальное окно ---------------------*/
+.modal-dialog {
+  width: 460px;
+  box-shadow: none;
+}
+.modal-dialog input[type="number"]::-webkit-outer-spin-button,
+.modal-dialog input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.modal-dialog input[type="number"] {
+  -moz-appearance: textfield;
+}
+.modal-dialog input[type="number"]:hover,
+.modal-dialog input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+.modal-dialog input[type=number]::-webkit-inner-spin-button,
+.modal-dialog input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.modal-dialog .modal-body {
+  padding: 0;
+}
+.modal-dialog .modal-body .modal-line {
+  margin: 0;
+  padding: 30px 20px;
+  background-color: #F6F6F6;
+}
+.modal-dialog .modal-body .modal-line input {
+  display: inline-block;
+  width: 25px;
+  height: 45px;
+  margin-top: 0px;
+  padding: 0;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+}
+.modal-dialog .modal-body .modal-line input:focus {
+  box-shadow: none;
+}
+.modal-dialog .modal-body .modal-line button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  margin: 12px 0px;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  color: white;
+}
+.modal-dialog .modal-body .modal-line button:focus {
+  outline: none;
+}
+.modal-dialog .modal-body .modal-line .plus {
+  background-color: #00BF81;
+  padding-top: 1px;
+}
+.modal-dialog .modal-body .modal-line .minus {
+  background-color: #3A3A3A;
+  margin-left: 12px;
+}
+.modal-dialog .modal-body .modal-line .rooms {
+  background-color: white;
+  border: 1px solid #D4DAE0;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+}
+.modal-dialog .modal-body .modal-line .rooms:last-child {
+  margin-left: 15px;
+}
+.modal-dialog .modal-body .modal-line .rooms .row {
+  background-color: transparent;
+  padding: 3px 20px;
+}
+.modal-dialog .modal-body .modal-line .rooms .row .q-ty {
+  font-size: 13px;
+  width: 106px;
+  display: inline-block;
+  border-right: 1px solid #D4DAE0;
+  height: 42px;
+  line-height: 42px;
+  padding: 0 0 0 10px;
+  margin: 0;
+}
+.modal-dialog .modal-body .contact {
+  padding: 20px;
+}
+.modal-dialog .modal-body .contact input {
+  display: block;
+  border: 1px solid #D4DAE0;
+  height: 50px;
+  line-height: 48px;
+  width: 100%;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 20px;
+}
+.modal-dialog .modal-body .contact .sale {
+  padding: 5px 60px 0 60px;
+  position: relative;
+}
+.modal-dialog .modal-body .contact .sale:before {
+  content: url(../img/sale1.png);
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+.modal-dialog .modal-body .contact .price-line {
+  padding-top: 30px;
+}
+.modal-dialog .modal-body .contact .price-line button {
+  width: 250px;
+  text-align: center;
+  border: none;
+  box-shadow: 3px 3px 6px -3px #808080;
+  background-color: #F0E707;
+  height: 45px;
+  color: #3C3C3C;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.modal-dialog .modal-body .contact .price-line .prices {
+  display: inline-block;
+  margin-top: 0;
+  padding-left: 20px;
+}
+.modal-dialog .modal-body .contact .price-line .prices .price {
+  font-weight: bold;
+  font-size: 18px;
+}
+.modal-dialog .modal-body .contact .price-line .prices .pricetime {
+  color: black;
+  font-weight: bold;
+  font-style: 10px;
+}
+.modal-dialog .hq {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+}
+.modal-dialog .hq .haveq {
+  margin-left: 90px;
+  color: black;
+  font-weight: bold;
+  font-style: 10px;
+}
+.modal-dialog .hq .phone {
+  margin-left: 45px;
+}
+/*--------------- Адаптивность ---------------------*/
+@media (max-width: 993px) {
+  .menu-nav {
+    margin: 0 3px;
+  }
+}
